@@ -34,3 +34,30 @@ img {
     max-width: 100%; /* Bredde må maks fylde 100% */
     height: auto; /* Højden skal tilpasse sig */
 }
+
+#animatedDiv {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    position: relative;
+    margin: 200px auto;
+    animation: animationName 5s ease-in-out infinite;
+    outline-style: groove;
+}
+
+@keyframes animationName {
+    0% {
+        transform: translateY(0);
+        background-color: lightblue;
+    }
+    50% {
+        transform: translateY(-30px);
+        background-color: lightgreen;
+    }
+    100% {
+        transform: translateY(0);
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+
